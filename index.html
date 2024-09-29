@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Widi Faiz Akhmad</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .header {
+            text-align: center;
+        }
+        .section {
+            margin-top: 20px;
+        }
+        .profile {
+            display: flex;
+            justify-content: space-between;
+        }
+        .profile img {
+            width: 200px; /* Set the desired width */
+            height: auto; /* Adjust height automatically based on the image's aspect ratio */
+            text-align: center;
+        }
+        .skills-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .skills-table th, .skills-table td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+        .contact-form label, .contact-form input, .contact-form textarea {
+            display: block;
+            margin-bottom: 10px;
+        }
+        .contact-form input[type="submit"] {
+            width: auto;
+            cursor: pointer;
+        }
+        .social-links a {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">
+            <h1>Portfolio</h1>
+        </div>
+
+        <div class="profile section">
+            <div class="photo">
+                <img src="assets/image.jpeg" alt="Foto Profil">
+                <p style="text-align: center;">Foto Profil</p>
+            </div>
+            <div class="video">
+                <video controls>
+                    <source src="assets/video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <p style="text-align: center;">Video Perkenalan</p>
+            </div>
+        </div>
+
+        <div class="about section">
+            <h2>Tentang Saya</h2>
+            <p>Our team at CAATIS is revolutionizing school presence system; I contribute by implementing robust MySQL and MariaDB solutions. As a Assistant Laboratory at the Forensic And Security Laboratory, we delve into cybersecurity governance, ensuring our practices align with Indonesian law, enhancing the digital security landscape as well as organizing University-wide CTF Competition to internally select teams across different faculties to represent Telkom University in GEMASTIK; a nationally held Information Technology Competition.
+            <br>
+            <br>
+            Concurrently, at Telkom University, my academic journey in Information Technology hones my expertise in database management and cybersecurity. With a strong foundation in theory and practice, I am committed to advancing the integrity and efficiency of digital infrastructures.
+            </p>
+        </div>
+
+        <div class="skills section">
+            <h2>Keterampilan</h2>
+            <table class="skills-table">
+                <tr>
+                    <th>Experience</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td>Back End Developer</td>
+                    <td>Develop and maintains the Backend database of Presence Information System (Sipresi) for students at SMKN 10 Kota Bandung and SMK Telkom Bandung Using COTS software:
+                        <ul>
+                            <li>Utilizing Dbeaver software with MariaDB for database management and MySQL scripting in accordance to the school needs.</li>                    
+                            <li>Input students data as part of the digitalization for presence process in SMKN 10 and SMK Telkom Bandung.</li>  
+                        </ul>
+                    </td>
+                    
+                </tr>
+                <tr>
+                    <td>Forensic and Security Laboratory</td>
+                    <td>
+                        Laboratory Assistant
+                        <ul>
+                            <li>Coordinating Media Related Matters and organizing university-wide CTF competition to internally select teams across faculties to represent Telkom University on GEMASTIK; a nationally-held Information Technology competition.</li>
+                        </ul>
+                        Laboratory Member
+                        <ul>
+                            Researching Cybersecurity Governance in compliance to Indonesian law, namely UU Perlindungan Data Pribadi (UU PDP) and Indonesian E-Governance system, SPBE.
+                        </ul>
+                        Laboratory intern
+                        <ul>
+                            Attending Study Group where I Learned about:
+                            <li>Linux Fundamentals</li>
+                            <li>Programming Language</li>
+                            <li>Network Security</li>
+                            <li>Web Hacking Fundamentals</li>
+                            <li>Newest Cyber Security Issue</li>
+                            <li>Introduction to Digital Forensics</li>
+                            <li>Introduction to Capture the Flag</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Cloud Computing Cohort</td>
+                    <td>
+                        A flagship program that prepares students to acquire the necessary skills to perform in critical industries led by Google supported by GoTo, Traveloka, and Deeptech Foundation
+                        <ul>
+                            <li>Successfully completed required courses and became one of 169 cohort graduates with distinction out of 1.408.</li>
+                            <li>Developing a capstone product as teams consisting of other learning paths such as Mobile Development and Machine Learning and leveraging services in Google Cloud Platform to provide critical infrastructure and deployment using containerization.</li>
+                            <li>Acquired 8.150 activity points, one of them by being a peer tutor in a mentor-validated study group.</li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="contact section">
+            <h2>Hubungi Saya</h2>
+            <form class="contact-form">
+                <label for="name">Nama:</label>
+                <input type="text" id="name" name="name">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+
+                <label for="message">Pesan:</label>
+                <textarea id="message" name="message"></textarea>
+
+                <input type="submit" value="Kirim Pesan">
+            </form>
+        </div>
+
+        <div class="social section">
+            <h2>Media Sosial:</h2>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/widi-faiz-akhmad">LinkedIn</a>
+                <a>|</a>
+                <a href="https://github.com/widifaizakhmad">GitHub</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
