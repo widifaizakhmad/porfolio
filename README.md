@@ -1,2 +1,2 @@
 # porfolio
-format komentar <!-- {fungsi utama} | {kenapa tag tersebut digunakan}-->
+format komentar "<!-- {fungsi utama} | {kenapa tag tersebut digunakan}-->"
