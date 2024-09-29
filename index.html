@@ -1,10 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Widi Faiz Akhmad</title>
-    <style>
+<!DOCTYPE html> <!--menandakan penggunaan HTML5-->
+<html lang="en"> <!--struktur container halaman | digunakan sebagai root dokumen HTML-->
+<head> <!--untuk meletakkan metadata | digunakan untuk meletakkan tag title dan style-->
+    <meta charset="UTF-8"> <!--metadata untuk dokumen html | menggunakan UTF-8 sebagai encoding abjad-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--mengatur tampilan | digunakan agar tampilan responsif di perangkat lain-->
+    <title>Portfolio Widi Faiz Akhmad</title> <!--Menentukan Judul halaman web | menyesuaikan judul halaman web dengan tujuan dokumen; website portfolio -->
+    <style>  <!--tempat menulis css | untuk mengatur ukuran dan margin-->
         body {
             font-family: Arial, sans-serif;
         }
@@ -24,8 +24,8 @@
             justify-content: space-between;
         }
         .profile img {
-            width: 200px; /* Set the desired width */
-            height: auto; /* Adjust height automatically based on the image's aspect ratio */
+            width: 200px; 
+            height: auto; 
             text-align: center;
         }
         .skills-table {
@@ -50,31 +50,30 @@
         }
     </style>
 </head>
-<body>
+<body> <!--memiliki semua konten dari dokumen HTML | digunakan untuk menampilkan elemen semua konten yang ditampilkan ke pengguna-->
 
-    <div class="container">
+    <div class="container"> <!--pembagian atau divisi dari sebuah dokumen | digunakan utamanya untuk tata letak dan styling-->
         <div class="header">
-            <h1>Portfolio</h1>
+            <h1>Portfolio</h1> <!--elemen heading H1 menandakan judul dengan ukuran paling besar | digunakan sebagai penanda judul dari website-->
         </div>
 
         <div class="profile section">
             <div class="photo">
-                <img src="assets/image.jpeg" alt="Foto Profil">
-                <p style="text-align: center;">Foto Profil</p>
+                <img src="assets/image.jpeg"> <!--Mmenampilkan gambar atribut src menunjukkan lokasi file gambar| digunakan untuk menampilkan gambar pembuat website-->
+                <p style="text-align: center;">Foto Profil</p> <!--paragraf | untuk menjelaskan gambar diatasnya-->
             </div>
             <div class="video">
-                <video controls>
-                    <source src="assets/video.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
+                <video controls> <!--menampilkan video atribut controls untuk mengontrol pemutaran video| untuk menunjukkan profil diri dalam bentuk video-->
+                    <source src="assets/video.mp4" type="video/mp4"> <!--spesifikasi sumber media yang digunakan | untuk menampilkan video-->
                 </video>
                 <p style="text-align: center;">Video Perkenalan</p>
             </div>
         </div>
 
         <div class="about section">
-            <h2>Tentang Saya</h2>
+            <h2>Tentang Saya</h2> <!--elemen heading H2 menandakan poin utama atau sub bab setelah judul | Menjelaskan "tentang saya"-->
             <p>Our team at CAATIS is revolutionizing school presence system; I contribute by implementing robust MySQL and MariaDB solutions. As a Assistant Laboratory at the Forensic And Security Laboratory, we delve into cybersecurity governance, ensuring our practices align with Indonesian law, enhancing the digital security landscape as well as organizing University-wide CTF Competition to internally select teams across different faculties to represent Telkom University in GEMASTIK; a nationally held Information Technology Competition.
-            <br>
+            <br> <!--line break | untuk memberikan spasi atau jeda dalam kode-->
             <br>
             Concurrently, at Telkom University, my academic journey in Information Technology hones my expertise in database management and cybersecurity. With a strong foundation in theory and practice, I am committed to advancing the integrity and efficiency of digital infrastructures.
             </p>
@@ -82,16 +81,16 @@
 
         <div class="skills section">
             <h2>Keterampilan</h2>
-            <table class="skills-table">
-                <tr>
-                    <th>Experience</th>
+            <table class="skills-table"> <!--membuat tabel di halaman | untuk merincikan pengalaman dan deskripsinya-->
+                <tr> <!--table row, memberikan baris pada tabel | baris ini berisi table header-->
+                    <th>Experience</th> <!--table header sebagai judul dalam sebuah sel tabel | untuk menjelaskan tabel experience-->
                     <th>Description</th>
                 </tr>
                 <tr>
-                    <td>Back End Developer</td>
+                    <td>Back End Developer</td> <!--table data, berisi data dalam sebuah tabel, digunakan dibawah table header | untuk mengisi deskripsi dari pengalaman-->
                     <td>Develop and maintains the Backend database of Presence Information System (Sipresi) for students at SMKN 10 Kota Bandung and SMK Telkom Bandung Using COTS software:
-                        <ul>
-                            <li>Utilizing Dbeaver software with MariaDB for database management and MySQL scripting in accordance to the school needs.</li>                    
+                        <ul> <!--unordered list | memberikan bullet point untuk memperindah deskripsi-->
+                            <li>Utilizing Dbeaver software with MariaDB for database management and MySQL scripting in accordance to the school needs.</li> <!--list item | untuk memberikan list yang akan diberikan bulletpoint di awalannya-->                   
                             <li>Input students data as part of the digitalization for presence process in SMKN 10 and SMK Telkom Bandung.</li>  
                         </ul>
                     </td>
@@ -137,15 +136,15 @@
 
         <div class="contact section">
             <h2>Hubungi Saya</h2>
-            <form class="contact-form">
-                <label for="name">Nama:</label>
-                <input type="text" id="name" name="name">
+            <form class="contact-form"> <!--formulir interaktif | untuk pengguna agar bisa mengisi data-->
+                <label for="name">Nama:</label> <!--label mengasosiasikan text label dengan input | memberikan informasi pada pengguna untuk mengisi nama-->
+                <input type="text" id="name" name="name"> <!--elemen input, berupa teks | untuk menerima masukan pengguna-->
 
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email">
 
                 <label for="message">Pesan:</label>
-                <textarea id="message" name="message"></textarea>
+                <textarea id="message" name="message"></textarea> <!--mengkoleksikan input pengguna lebih banyak | untuk menerima pesan yang ingin disampaikan pengguna-->
 
                 <input type="submit" value="Kirim Pesan">
             </form>
@@ -154,8 +153,8 @@
         <div class="social section">
             <h2>Media Sosial:</h2>
             <div class="social-links">
-                <a href="https://www.linkedin.com/in/widi-faiz-akhmad">LinkedIn</a>
-                <a>|</a>
+                <a href="https://www.linkedin.com/in/widi-faiz-akhmad">LinkedIn</a> <!--anchor untuk mendefinisikan hyperlink | digunakan untuk mengaitkan tautan linkedin ke kata "LinkedIn"-->
+                <p>|</p>
                 <a href="https://github.com/widifaizakhmad">GitHub</a>
             </div>
         </div>
